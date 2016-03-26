@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     // Review Criteria
     // ¿La interfaz gráfica define las dos etiquetas y el botón de: “Quiero una hamburguesa!!!”? - OK
-    // ¿Los elementos gráficos se encuentran centrados? - OK (Setear el emulador en iPhone5s)
+    // ¿Los elementos gráficos se encuentran centrados? - OK
     // ¿La clase ViewController.swift cuenta con: 
     // Un @IBoutlet para la etiqueta de país. - OK
     // Un @IBoutlet para la etiqueta de hamburguesa.  - OK

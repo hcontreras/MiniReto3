@@ -20,24 +20,18 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-rd-C0d">
                                 <rect key="frame" x="16" y="239" width="280" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="yqt-kp-sbw"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb7-M4-TRl">
                                 <rect key="frame" x="16" y="112" width="280" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="82L-PT-koq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-ai-RZg">
-                                <rect key="frame" x="37" y="373" width="247" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-ai-RZg">
+                                <rect key="frame" x="16" y="374" width="280" height="34"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="¡Quiero una hamburguesa!"/>
@@ -48,14 +42,14 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="Jp1-rd-C0d" secondAttribute="leading" id="1YP-A2-I2z"/>
-                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="353" id="3EZ-xL-1ZJ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Qb7-M4-TRl" secondAttribute="leading" id="7kN-d8-in4"/>
-                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="F4R-Ce-dkk"/>
-                            <constraint firstItem="Qb7-M4-TRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="VfN-fC-OGm"/>
-                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnM-TM-yuD"/>
-                            <constraint firstItem="Jp1-rd-C0d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="219" id="eY7-pY-Gpt"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lr1-ai-RZg" secondAttribute="bottom" constant="146" id="wdT-gP-qj6"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="leading" secondItem="Jp1-rd-C0d" secondAttribute="leading" id="BQp-b8-h7p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lr1-ai-RZg" secondAttribute="trailing" constant="8" id="LKB-A8-mIV"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="trailing" secondItem="Qb7-M4-TRl" secondAttribute="trailing" id="amc-oM-vQv"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jBy-5P-hrp"/>
+                            <constraint firstItem="Jp1-rd-C0d" firstAttribute="top" secondItem="Qb7-M4-TRl" secondAttribute="bottom" constant="86" id="saZ-pE-gZJ"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="leading" secondItem="Qb7-M4-TRl" secondAttribute="leading" id="vSc-Ew-KkV"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="trailing" secondItem="Jp1-rd-C0d" secondAttribute="trailing" id="yuq-eX-8QL"/>
+                            <constraint firstItem="Qb7-M4-TRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="zv5-TO-r9S"/>
                         </constraints>
                     </view>
                     <connections>
