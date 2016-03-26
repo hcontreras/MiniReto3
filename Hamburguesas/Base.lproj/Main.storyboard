@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-rd-C0d">
+                                <rect key="frame" x="16" y="239" width="280" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="yqt-kp-sbw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb7-M4-TRl">
+                                <rect key="frame" x="16" y="112" width="280" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="82L-PT-koq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-ai-RZg">
+                                <rect key="frame" x="37" y="373" width="247" height="49"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="¡Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="mostrarNuevaHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nV-gw-0UZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Jp1-rd-C0d" secondAttribute="leading" id="1YP-A2-I2z"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="353" id="3EZ-xL-1ZJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Qb7-M4-TRl" secondAttribute="leading" id="7kN-d8-in4"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="F4R-Ce-dkk"/>
+                            <constraint firstItem="Qb7-M4-TRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="VfN-fC-OGm"/>
+                            <constraint firstItem="Lr1-ai-RZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnM-TM-yuD"/>
+                            <constraint firstItem="Jp1-rd-C0d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="219" id="eY7-pY-Gpt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lr1-ai-RZg" secondAttribute="bottom" constant="146" id="wdT-gP-qj6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHamburguesa" destination="Jp1-rd-C0d" id="Khk-Qe-cdo"/>
+                        <outlet property="lblPais" destination="Qb7-M4-TRl" id="tx2-D2-uqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="319"/>
+        </scene>
+    </scenes>
+</document>
