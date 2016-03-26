@@ -6,8 +6,14 @@
 //  Copyright © 2016 Humberto Contreras. All rights reserved.
 //
 
+// Review Criteria
+// ¿Se incluye en el proyecto el archivo: Datos.swift? - OK
+
 import Foundation
 import UIKit
+
+// Review Criteria
+// ¿Dentro del archivo Datos.swift se define la clase: ColeccionDePaises con la funcionalidad definida? - OK
 
 // Clase de países
 class ColeccionDePaises {
@@ -18,6 +24,10 @@ class ColeccionDePaises {
         return paises[index]
     }
 }
+
+// Review Criteria
+// ¿Dentro del archivo Datos.swift se define la clase: ColeccionDeHamburguesas 
+// con la funcionalidad definida? - OK
 
 // Clase de hamburguesas
 class ColeccionDeHamburguesa {

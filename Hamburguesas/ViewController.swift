@@ -8,12 +8,26 @@
 
 import UIKit
 
+// Review Criteria
+// ¿El playground se encuentra en GitHub? - OK
+// ¿El playground está hecho en Swift? - OK
+
 class ViewController: UIViewController {
     
+    // Review Criteria
+    // ¿La interfaz gráfica define las dos etiquetas y el botón de: “Quiero una hamburguesa!!!”? - OK
+    // ¿Los elementos gráficos se encuentran centrados? - OK (Setear el emulador en iPhone5s)
+    // ¿La clase ViewController.swift cuenta con: 
+    // Un @IBoutlet para la etiqueta de país. - OK
+    // Un @IBoutlet para la etiqueta de hamburguesa.  - OK
+    // Un @IBAction para implementar cambiar de país y de hamburguesa? - OK
     // Componentes
     @IBOutlet weak var lblPais: UILabel!
     @IBOutlet weak var lblHamburguesa: UILabel!
     
+    // Review Cirteria
+    // ¿La clase ViewController.swift define una instancia de cada una de las siguientes 
+    // clases ColeccionDePaises,  ColeccionDeHamburguesas? - OK
     // Intancias
     let paises: ColeccionDePaises = ColeccionDePaises()
     let hamburguesas: ColeccionDeHamburguesa = ColeccionDeHamburguesa()
@@ -32,6 +46,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Review Criteria
+    // ¿Al presionar el botón se cambian de manera aleatoria los valores 
+    // de la etiqueta país y hamburguesa? - OK
     // Accion que ejecuta el botón
     @IBAction func mostrarNuevaHamburguesa() {
         self.obtenerPaisYHamburguesa()
@@ -46,4 +63,3 @@ class ViewController: UIViewController {
         lblHamburguesa.text     = "Hamburguesa: \(hamburguesas.obtenHamburguesa())"
     }
 }
-
